@@ -5,6 +5,7 @@ import Bubble from "./presentation/bubbles";
 import {Team} from "./presentation/team";
 import Description from "./presentation/description";
 import Newsletter from "./presentation/newsletter";
+import ScrollSpyTabs from "./components/scrollSpyTabs";
 
 const theme = createMuiTheme({
     palette: {
@@ -59,17 +60,36 @@ const theme = createMuiTheme({
     }
 });
 
+function Presentation() {
+    return (
+        <div>
+            <Header/>
+            <Bubble/>
+            <Description/>
+        </div>
+    )
+}
+
 function App() {
     return (
         <MuiThemeProvider theme={theme}>
             <div>
-                <Header/>
-                <body>
-                <Bubble/>
-                <Description/>
-                <Team/>
-                <Newsletter/>
-                </body>
+                <ScrollSpyTabs
+                    tabsInScroll={[
+                        {
+                            text: "présentation",
+                            component: <Presentation/>
+                        },
+                        {
+                            text: "Equipe",
+                            component: <Team/>
+                        },
+                        {
+                            text: 'Newsletter',
+                            component: <Newsletter/>
+                        }
+                    ]}
+                />
             </div>
         </MuiThemeProvider>
     );

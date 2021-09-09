@@ -70,7 +70,6 @@ function Header(props) {
     const classes = useStyles();
     return (
         <div>
-            <Tabs i1={"présentation"} i2={"équipe"} i3={"Newsletter"} i4={"Tester"}/>
             <div className={classes.header}>
                 <Grid container xs spacing={5}>
                     <Logo/>

@@ -6,7 +6,6 @@ import Typography from "@material-ui/core/Typography";
 export const Team = () => {
     return (
         <div>
-            <Typography variant={'h1'} style={{fontWeight: "bold"}} color={"secondary"}>L'équipe</Typography>
             <Grid container xs direction={"row"} spacing={2}>
                 <Grid item container direction={"column"} xs={4}>
                     <MakeMyBubble color={"#121218"} img={""} text={"Rafaël Marques"}/>
