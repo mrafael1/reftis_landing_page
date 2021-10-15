@@ -2,6 +2,7 @@ import Grid from "@material-ui/core/Grid";
 import React from "react";
 import {makeStyles} from '@material-ui/core/styles';
 import Typography from "@material-ui/core/Typography";
+import Paper from "@material-ui/core/Paper";
 
 const useStyles = makeStyles((theme) => ({
     left: {
@@ -61,13 +62,17 @@ function Description() {
                 <Grid container alignItems={"center"} xs={12}>
                     <Grid item xs={12}>
                         <Typography color={"textSecondary"} style={{textAlign: "justify", fontSize: 23}}>
-                            Reftis vous permet de pouvoir créer un mannequin en 3 dimensions correspondant à vos propres
+                            Reftis vous permet de pouvoir créer un mannequin en 3 dimensions correspondant à vos
+                            propres
                             mensurations.</Typography>
-                        <Typography color={"textSecondary"} style={{textAlign: "justify", fontSize: 23}}> Essayer des
+                        <Typography color={"textSecondary"} style={{textAlign: "justify", fontSize: 23}}> Essayer
+                            des
                             vêtements en ligne devient alors possible!</Typography>
-                        <Typography color={"textSecondary"} style={{textAlign: "justify", fontSize: 23}}>Fini le retour
+                        <Typography color={"textSecondary"} style={{textAlign: "justify", fontSize: 23}}>Fini le
+                            retour
                             de
-                            vêtement intempestif pour cause de taille trop grande ou trop petite. Assurer vous que le
+                            vêtement intempestif pour cause de taille trop grande ou trop petite. Assurer vous que
+                            le
                             vêtement est à votre taille avant même de l'acheter.</Typography>
                     </Grid>
                 </Grid>

@@ -77,7 +77,7 @@ function App() {
                 <ScrollSpyTabs
                     tabsInScroll={[
                         {
-                            text: "présentation",
+                            text: "Présentation",
                             component: <Presentation/>
                         },
                         {

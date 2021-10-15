@@ -67,7 +67,6 @@ const textToHash = (text, unique = {}) => {
             text
                 .toLowerCase()
                 .replace(/=&gt;|&lt;| \/&gt;|<code>|<\/code>|&#39;/g, "")
-                // eslint-disable-next-line no-useless-escape
                 .replace(/[!@#\$%\^&\*\(\)=_\+\[\]{}`~;:'"\|,\.<>\/\?\s]+/g, "-")
                 .replace(/-+/g, "-")
                 .replace(/^-|-$/g, "")
@@ -117,15 +116,12 @@ function ScrollSpyTabs(props) {
     const clickedRef = React.useRef(false);
     const unsetClickedRef = React.useRef(null);
     const findActiveIndex = React.useCallback(() => {
-        // set default if activeState is null
         if (activeState === null) setActiveState(itemsServer[0].hash);
 
-        // Don't set the active index based on scroll if a link was just clicked
         if (clickedRef.current) return;
 
         let active;
         for (let i = itemsClientRef.current.length - 1; i >= 0; i -= 1) {
-            // No hash if we're near the top of the page
             if (document.documentElement.scrollTop < 0) {
                 active = { hash: null };
                 break;

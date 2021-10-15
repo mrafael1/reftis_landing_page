@@ -71,7 +71,7 @@ function Newsletter() {
     return (
         <div className={classes.root}>
             <Paper className={classes.paper} elevation={5}>
-                <Typography color={"secondary"} style={{fontWeight: "bold",}} variant={"h1"}>NewsLetter</Typography>
+                <Typography color={"secondary"} style={{fontWeight: "bold",}} variant={"h1"}>Newsletter</Typography>
                 <Typography>Abonnez vous pour vous tenir informer du développement de l'application et en savoir plus sur son fonctionnement</Typography>
                 <form className={classes.form}>
                     <Grid container xs spacing={3}>

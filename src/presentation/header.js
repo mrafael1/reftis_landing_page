@@ -1,4 +1,3 @@
-import Tabs from "../components/tabs";
 import Grid from "@material-ui/core/Grid";
 import {MyButton} from "../components/button";
 import React from "react";
